@@ -23,7 +23,7 @@ public class Main {
         for (int j : arr) {
             sum += j;
         }
-        System.out.println(sum);
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
     }
 
