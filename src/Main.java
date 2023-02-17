@@ -20,8 +20,8 @@ public class Main {
         System.out.println("Задача 1");
         int[ ] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr [i];
+        for (int j : arr) {
+            sum += j;
         }
         System.out.println(sum);
 
