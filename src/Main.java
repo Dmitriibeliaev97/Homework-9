@@ -23,7 +23,7 @@ public class Main {
         for (int j : arr) {
             sum += j;
         }
-        System.out.println(sum);
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
     }
 
@@ -45,6 +45,12 @@ public class Main {
     }
     public static void task3 () {
         System.out.println("Задача 3");
+        int[ ] arr = generateRandomArray();
+        double sum = 0;
+        for (int j : arr) {
+            sum += j;
+        }
+        System.out.println("Средняя сумма трат за месяц составила " + (sum / 30) + " рублей");
 
     }
     public static void task4 () {
