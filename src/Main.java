@@ -18,15 +18,39 @@ public class Main {
 
     public static void task1 () {
         System.out.println("Задача 1");
+        int[ ] arr = generateRandomArray();
+        int sum = 0;
+        for (int j : arr) {
+            sum += j;
+        }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
     }
 
     public static void task2 () {
         System.out.println("Задача 2");
-
+        int[ ] arr = generateRandomArray();
+        int minSum = arr [0];
+        int maxSum = minSum;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxSum) {
+                maxSum = arr[i];
+                if (arr[i] < minSum) {
+                    minSum = arr[i];
+                }
+            }
+        }
+        System.out.println("Максимальная сумма трат за день составила " + maxSum + " рублей");
+        System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей");
     }
     public static void task3 () {
         System.out.println("Задача 3");
+        int[ ] arr = generateRandomArray();
+        double sum = 0;
+        for (int j : arr) {
+            sum += j;
+        }
+        System.out.println("Средняя сумма трат за месяц составила " + (sum / 30) + " рублей");
 
     }
     public static void task4 () {
